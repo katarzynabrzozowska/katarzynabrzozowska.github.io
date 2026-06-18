@@ -882,21 +882,10 @@ footer nav{
   .newsletter-form button{
     width:100%;
   }
-
+}
 /* =========================================
    ABOUT PAGE TIMELINE
 ========================================= */
-
-.story-intro-light{
-  background:var(--paper);
-  color:var(--light-text);
-  padding:115px 6vw;
-  text-align:center;
-}
-
-.story-intro-light .section-title{
-  margin-bottom:30px;
-}
 
 .story-timeline{
   padding:120px 6vw;
@@ -931,6 +920,7 @@ footer nav{
   border:1px solid rgba(214,189,134,.18);
   background:#100e1f;
   overflow:hidden;
+  border-radius:6px;
 }
 
 .story-image img{
@@ -938,11 +928,15 @@ footer nav{
   height:100%;
   min-height:560px;
   object-fit:cover;
-  filter:brightness(.85);
+  display:block;
 }
 
 .story-content{
   max-width:620px;
+}
+
+.story-content .kicker{
+  margin-bottom:18px;
 }
 
 .story-content h3{
@@ -951,11 +945,13 @@ footer nav{
   font-weight:300;
   line-height:1.02;
   color:#f4f0fb;
-  margin:0 0 30px;
+  margin:0 0 24px;
 }
 
 .story-content p{
   color:#cfc7da;
+  font-size:17px;
+  line-height:1.9;
 }
 
 .story-quote{
@@ -982,7 +978,12 @@ footer nav{
   .story-image{
     min-height:420px;
   }
-}
 
+  .story-image img{
+    min-height:420px;
+  }
 
+  .story-content h3{
+    font-size:48px;
+  }
 }
