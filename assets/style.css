@@ -1199,3 +1199,37 @@ footer nav{
     align-items:stretch;
   }
 }
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+.socials {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  z-index: 10;
+}
+
+.socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #ead28a;
+  font-size: 20px;
+  text-decoration: none;
+  width: 22px;
+  height: 22px;
+  line-height: 1;
+}
+
+.socials i {
+  display: block;
+  font-size: 20px;
+  color: inherit;
+}
+
+.socials a:hover {
+  color: #ffffff;
+}
