@@ -639,6 +639,30 @@ small,
   cursor:pointer;
 }
 
+.about-hero {
+  min-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 120px 24px 90px;
+}
+
+.about-hero h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(3.2rem, 8vw, 8rem);
+  font-weight: 400;
+  line-height: 0.95;
+  margin: 18px 0;
+}
+
+.about-hero p {
+  max-width: 680px;
+  font-size: 1.15rem;
+  opacity: 0.85;
+}
+
 /* CONTACT — consistent premium style */
 body.contact-body{
   background:#f8f5ef;
