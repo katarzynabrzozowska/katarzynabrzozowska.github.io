@@ -1258,3 +1258,625 @@ footer nav{
 .socials a:hover {
   color: #ffffff;
 }
+/* =========================================
+   FEMININE PLUM + PINK THEME
+   Nadpisanie kolorystyki bez zmiany układu
+========================================= */
+
+:root{
+  --black:#110320;
+  --ink:#170720;
+  --navy:#1a0927;
+  --navy-2:#261333;
+
+  --cream:#fff8f0;
+  --paper:#fff8f0;
+
+  --text:#fff7fb;
+  --muted:#bcaec4;
+  --soft:#eaddea;
+
+  --gold:#e1a0cf;
+  --gold-light:#f3c8dd;
+
+  --line:rgba(225,160,207,.24);
+  --light-line:#eadde6;
+  --light-text:#3b243f;
+}
+
+
+/* TYPOGRAFIA */
+
+h1,
+h2,
+h3,
+em,
+i,
+.brand,
+.letter,
+.membership-price,
+.cta-links a,
+.philosophy-list article blockquote,
+.experience-number{
+  font-family:"Bodoni Moda",serif;
+}
+
+h1,
+h2,
+h3{
+  letter-spacing:-.035em;
+}
+
+body{
+  background:var(--black);
+  color:var(--text);
+}
+
+p{
+  color:#e1d6e3;
+}
+
+em,
+i{
+  color:var(--gold);
+}
+
+
+/* HEADER */
+
+.site-header{
+  background:rgba(17,3,32,.94);
+  border-bottom:1px solid rgba(225,160,207,.18);
+  box-shadow:0 8px 30px rgba(42,12,49,.12);
+}
+
+.brand{
+  color:var(--gold-light);
+}
+
+.site-header nav a{
+  color:#d9c8df;
+}
+
+.site-header nav a:hover{
+  color:var(--gold);
+}
+
+.socials a{
+  color:var(--gold);
+}
+
+.socials a:hover{
+  color:#fff7fb;
+}
+
+
+/* PRZYCISKI */
+
+.btn{
+  background:var(--gold);
+  color:#210b25;
+  border-color:var(--gold);
+  box-shadow:0 10px 30px rgba(225,160,207,.16);
+}
+
+.btn:hover{
+  background:#efb7dc;
+  filter:none;
+}
+
+.btn-outline{
+  background:transparent;
+  color:var(--gold-light);
+  border-color:rgba(243,200,221,.48);
+}
+
+.btn-outline:hover{
+  background:rgba(225,160,207,.10);
+}
+
+.text-link{
+  color:var(--gold);
+}
+
+
+/* CIEMNE SEKCJE */
+
+.section-dark{
+  background:
+    radial-gradient(
+      circle at 50% 36%,
+      rgba(102,51,111,.28),
+      transparent 34%
+    ),
+    linear-gradient(
+      180deg,
+      #110320 0%,
+      #1c0b29 58%,
+      #16061f 100%
+    );
+}
+
+.hero{
+  background:
+    radial-gradient(
+      circle at 50% 40%,
+      rgba(225,160,207,.12),
+      transparent 31%
+    ),
+    linear-gradient(
+      180deg,
+      #110320 0%,
+      #190824 100%
+    );
+}
+
+.hero h1{
+  color:#fff8fc;
+}
+
+.hero h1 em{
+  color:var(--gold);
+}
+
+.hero .eyebrow-line{
+  color:var(--gold-light);
+}
+
+.eyebrow-line span{
+  background:rgba(225,160,207,.30);
+}
+
+.small-tags{
+  color:var(--gold);
+}
+
+.hero-copy{
+  color:#ded0e1;
+}
+
+
+/* RUCHOMY PASEK */
+
+.ticker{
+  background:#4f0c28;
+  border-top:1px solid rgba(243,200,221,.18);
+  border-bottom:1px solid rgba(243,200,221,.18);
+}
+
+.ticker-track span{
+  color:#f6cce1;
+}
+
+
+/* JASNE SEKCJE */
+
+.section-light{
+  background:
+    radial-gradient(
+      circle at 15% 20%,
+      rgba(225,160,207,.08),
+      transparent 28%
+    ),
+    var(--paper);
+
+  color:var(--light-text);
+}
+
+.section-light p{
+  color:#755f78;
+}
+
+.section-title{
+  color:#3a1d3e;
+}
+
+.kicker{
+  color:#b85f98;
+}
+
+
+/* KARTY */
+
+.cards{
+  border-color:#ead7e4;
+}
+
+.cards article{
+  background:rgba(255,255,255,.56);
+  border-color:#ead7e4;
+}
+
+.cards h3{
+  color:#9b4d82;
+}
+
+.letter{
+  color:#efdbe8;
+}
+
+.cards small{
+  color:#b66d9b;
+}
+
+
+/* SEKCJA O MNIE NA GŁÓWNEJ */
+
+.guide{
+  background:
+    radial-gradient(
+      circle at 24% 35%,
+      rgba(225,160,207,.14),
+      transparent 30%
+    ),
+    linear-gradient(
+      135deg,
+      #110320 0%,
+      #1e0c2a 100%
+    );
+}
+
+.guide-photo{
+  background:linear-gradient(135deg,#3b1741,#16061f);
+  border-color:rgba(225,160,207,.24);
+}
+
+.guide h2,
+.guide h1{
+  color:#fff7fb;
+}
+
+.guide-copy p{
+  color:#ddcfdf;
+}
+
+
+/* PROCES */
+
+.process{
+  background:#fff8f0;
+}
+
+.process .cards article span,
+.philosophy-list span{
+  color:#e5bfd8;
+}
+
+
+/* OFERTA */
+
+.offer-section{
+  background:
+    radial-gradient(
+      circle at 50% 16%,
+      rgba(225,160,207,.15),
+      transparent 30%
+    ),
+    linear-gradient(
+      180deg,
+      #110320 0%,
+      #1c0927 100%
+    );
+}
+
+.offer-section h2{
+  color:#fff7fb;
+}
+
+.offer-grid{
+  border-color:rgba(225,160,207,.18);
+}
+
+.offer-grid article{
+  background:rgba(255,255,255,.025);
+  border-right-color:rgba(225,160,207,.14);
+}
+
+.offer-grid .featured{
+  background:
+    linear-gradient(
+      180deg,
+      rgba(225,160,207,.12),
+      rgba(255,255,255,.035)
+    );
+}
+
+.offer-grid h3{
+  color:#fff7fb;
+}
+
+.offer-grid ul,
+.offer-grid p{
+  color:#ddcfdf;
+}
+
+.offer-grid a{
+  color:var(--gold);
+}
+
+
+/* FILOZOFIA */
+
+.philosophy{
+  background:#fff8f0;
+}
+
+.philosophy-list h3{
+  color:#4b294d;
+}
+
+.philosophy-list article h3 em,
+.philosophy-list article blockquote{
+  color:#b85f98;
+}
+
+
+/* CYTAT */
+
+.quote{
+  background:
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(225,160,207,.16),
+      transparent 36%
+    ),
+    #4f0c28;
+}
+
+.quote h2{
+  color:#fff6fa;
+}
+
+.quote h2 em{
+  color:#f3c8dd;
+}
+
+
+/* OPINIE */
+
+.testimonials{
+  background:#fff8f0;
+}
+
+
+/* CTA */
+
+.cta{
+  background:
+    linear-gradient(
+      135deg,
+      #110320 0%,
+      #3a1238 100%
+    );
+}
+
+.cta h2{
+  color:#fff7fb;
+}
+
+.cta p{
+  color:#e0d2e2;
+}
+
+.cta-links{
+  border-color:rgba(225,160,207,.18);
+}
+
+.cta-links a{
+  color:#fff7fb;
+  border-bottom-color:rgba(225,160,207,.18);
+}
+
+.cta-links a:hover{
+  background:rgba(225,160,207,.08);
+  color:var(--gold-light);
+}
+
+
+/* MEMBERSHIP */
+
+.membership-section{
+  background:
+    radial-gradient(
+      circle at 15% 18%,
+      rgba(225,160,207,.09),
+      transparent 28%
+    ),
+    #fff8f0;
+
+  color:#3c233f;
+}
+
+.membership-title{
+  color:#3d2040;
+}
+
+.membership-title em{
+  color:#c56a9f;
+}
+
+.membership-copy,
+.membership-list li{
+  color:#765f78;
+}
+
+.membership-list li:before{
+  color:#c56a9f;
+}
+
+.membership-card{
+  background:
+    radial-gradient(
+      circle at 50% 35%,
+      rgba(225,160,207,.20),
+      transparent 35%
+    ),
+    linear-gradient(
+      135deg,
+      #110320 0%,
+      #4f0c28 100%
+    );
+
+  border-color:rgba(225,160,207,.25);
+  box-shadow:0 24px 70px rgba(79,12,40,.18);
+}
+
+.membership-card h3{
+  color:#fff7fb;
+}
+
+.membership-card h3 em{
+  color:#f3c8dd;
+}
+
+.membership-price{
+  color:#f3c8dd;
+}
+
+.membership-card p{
+  color:#e2d4e4;
+}
+
+
+/* NEWSLETTER */
+
+.newsletter-section{
+  background:
+    radial-gradient(
+      circle at 50% 28%,
+      rgba(225,160,207,.17),
+      transparent 35%
+    ),
+    linear-gradient(
+      180deg,
+      #110320 0%,
+      #230a2d 100%
+    );
+
+  color:#fff7fb;
+}
+
+.newsletter-section h2{
+  color:#fff7fb;
+}
+
+.newsletter-section h2 em{
+  color:#f3c8dd;
+}
+
+.newsletter-section p{
+  color:#cfc0d2;
+}
+
+.newsletter-form input{
+  background:rgba(255,248,252,.08);
+  color:#fff;
+  border-color:rgba(243,200,221,.24);
+}
+
+.newsletter-form input::placeholder{
+  color:#c8b2ca;
+}
+
+.newsletter-form button{
+  background:var(--gold);
+  color:#210b25;
+}
+
+
+/* FOOTER */
+
+footer{
+  background:#110320;
+  color:#bcaec4;
+  border-top:1px solid rgba(225,160,207,.14);
+}
+
+footer a:hover{
+  color:var(--gold);
+}
+
+
+/* ABOUT — TIMELINE */
+
+.story-timeline{
+  background:
+    radial-gradient(
+      circle at 50% 12%,
+      rgba(225,160,207,.14),
+      transparent 32%
+    ),
+    linear-gradient(
+      180deg,
+      #110320 0%,
+      #1b0a27 100%
+    );
+}
+
+.story-image{
+  background:#2a1032;
+  border-color:rgba(225,160,207,.24);
+}
+
+.story-content h3{
+  color:#fff7fb;
+}
+
+.story-content p{
+  color:#dfd1e1;
+}
+
+.story-quote{
+  color:#f3c8dd;
+}
+
+
+/* CONTACT */
+
+body.contact-body{
+  background:#fff8f0;
+  color:#3a203c;
+}
+
+.contact-page{
+  background:
+    radial-gradient(
+      circle at 20% 85%,
+      rgba(225,160,207,.12),
+      transparent 30%
+    ),
+    #fff8f0;
+
+  color:#3a203c;
+}
+
+.contact-info h1{
+  color:#2e1531;
+}
+
+.contact-info h1 em{
+  color:#bf649d;
+}
+
+.contact-info p{
+  color:#755f78;
+}
+
+.contact-form label{
+  color:#a77a9b;
+  border-top-color:#e4d2df;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select{
+  color:#402743;
+}
+
+.contact-form ::placeholder{
+  color:#bca7b7;
+}
+
+.form-bottom{
+  border-top-color:#e4d2df;
+}
