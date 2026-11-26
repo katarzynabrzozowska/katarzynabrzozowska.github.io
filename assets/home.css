@@ -517,18 +517,18 @@ nav details div {
    15. NEWSLETTER & FREE EBOOK
    ================================================== */
 
-#newsletter {
+#ebook {
     background: var(--dark);
     color: var(--cream);
 }
 
-#newsletter p {
+#ebook p:not(.eyebrow) {
     color: var(--muted);
 }
 
-.news {
+.ebook-grid {
     display: grid;
-    grid-template-columns: 1.15fr 0.85fr;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 0.85fr);
     gap: 48px;
     align-items: center;
     max-width: 1180px;
@@ -758,7 +758,7 @@ footer a {
 
     .split,
     .bio .split,
-    .news {
+    .ebook-grid {
         grid-template-columns: 1fr;
         gap: 25px;
     }
@@ -868,4 +868,22 @@ footer a {
     .pause {
         display: none;
     }
+}
+/* Independent newsletter section */
+#newsletter {
+    background: var(--panel);
+    color: var(--cream);
+}
+.newsletter-inner {
+    max-width: 800px;
+    text-align: center;
+}
+.newsletter-inner p:not(.eyebrow) {
+    color: var(--muted);
+}
+.newsletter-inner .btn {
+    margin-top: 12px;
+}
+#ebook .ebook-subtitle {
+    color: var(--pale);
 }
