@@ -1,4 +1,3 @@
-
 /* ========================================
    01. KOLORY I USTAWIENIA GLOBALNE
 ======================================== */
@@ -271,7 +270,8 @@
 }
 
 .consultation-page .consult-hero-image {
-    height: 350px;
+    height: auto;
+    object-fit: contain;
     object-position: center;
     border-radius: 5px;
 }
@@ -660,9 +660,6 @@
         gap: 30px;
     }
 
-    .consultation-page .consult-hero-image {
-        height: 330px;
-    }
 
     .consultation-page .consult-pricing-grid {
         gap: 20px;
@@ -697,9 +694,6 @@
         font-size: clamp(38px, 10vw, 48px);
     }
 
-    .consultation-page .consult-hero-image {
-        height: 250px;
-    }
 
     .consultation-page .consult-lead {
         font-size: 16px;
@@ -774,49 +768,32 @@
     }
 
 }
+
 /* ========================================
-   KOREKTA KOLORÓW NA JASNYM TLE
+   17. KONTRAST JASNYCH SEKCJI
 ======================================== */
 
-.light {
-    color: #3b243f;
+.consultation-page .consult-light h1,
+.consultation-page .consult-light h2,
+.consultation-page .consult-light h3,
+.consultation-page .consult-light h4,
+.consultation-page .consult-light summary {
+    color: var(--consult-dark);
 }
 
-.light h1,
-.light h2,
-.light h3,
-.light h4 {
-    color: #110320;
-}
-
-.light p,
-.light li,
-.light small,
-.light .lead {
-    color: #3b243f;
+.consultation-page .consult-light p,
+.consultation-page .consult-light li,
+.consultation-page .consult-light small,
+.consultation-page .consult-light .consult-lead {
+    color: var(--consult-ink);
     opacity: 1;
 }
 
-.light .eyebrow {
-    color: #98446f;
-}
-
-.light strong,
-.light b,
-.light em {
-    color: #4f0c28;
-}
-
-/* FAQ */
-
-.light summary {
-    color: #110320;
-}
-
-.light details p {
-    color: #3b243f;
-}
-
-.light details a {
-    color: #4f0c28;
+.consultation-page .consult-light .consult-eyebrow,
+.consultation-page .consult-light strong,
+.consultation-page .consult-light em,
+.consultation-page .consult-light b,
+.consultation-page .consult-light a:not(.consult-btn),
+.consultation-page .consult-light .consult-checklist li::before {
+    color: var(--consult-wine);
 }
