@@ -1,0 +1,62 @@
+/* Ponadprzecietna — shared service layer. Load LAST. */
+body.services-page {
+  --svc-dark:#110320; --svc-panel:#261333; --svc-wine:#4f0c28;
+  --svc-pink:#e1a0cf; --svc-cream:#fff8f0; --svc-muted:#eaddea;
+  --svc-border:#79516e;
+  --consult-border:#79516e;
+  margin:0; background:var(--svc-dark); color:var(--svc-cream);
+  font:15px/1.6 Inter,Arial,sans-serif;
+}
+.services-page *, .services-page *::before, .services-page *::after {box-sizing:border-box;}
+.services-page :is(.wrap,.consult-wrap) {width:100%;max-width:1180px;margin-inline:auto;padding:38px 32px;}
+.services-page :is(.site-header,.consult-header) {padding:18px max(5%,calc((100% - 1320px)/2));background:var(--svc-dark);}
+.services-page :is(h1,h2,h3) {font-family:'Bodoni Moda',Georgia,serif;font-weight:400;line-height:1.12;letter-spacing:-.035em;color:var(--svc-cream);}
+.services-page h1 {font-size:clamp(36px,4.2vw,58px);}
+.services-page h2 {font-size:clamp(30px,3vw,43px);}
+.services-page h3 {font-size:23px;}
+.services-page :is(.intro,.consult-section-heading) {margin:0 auto 24px;max-width:850px;text-align:center;}
+.services-page :is(.light,.consult-light) {background:var(--svc-wine);color:var(--svc-cream);}
+.services-page #analizy {background:var(--svc-dark);}
+.services-page :is(.light,.consult-light) :is(h1,h2,h3,h4,p,li,small,summary,strong,b) {color:var(--svc-cream);opacity:1;}
+.services-page :is(.light,.consult-light) :is(.eyebrow,.consult-eyebrow,em,.consult-icon,.consult-number) {color:var(--svc-pink);}
+.services-page :is(.eyebrow,.consult-eyebrow) {color:var(--svc-pink);font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;}
+.services-page :is(.btn,.consult-btn,.astro-card .btn) {background:var(--svc-pink);border:1px solid var(--svc-pink);color:var(--svc-dark);font-size:11px;font-weight:700;text-decoration:none;}
+.services-page :is(.btn,.consult-btn):hover {background:#f3c8dd;color:var(--svc-dark);}
+/* Hero: same grid as mentoring; image never cropped. */
+.services-page :is(.hero-layout,.consult-hero-grid) {display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr) minmax(0,.65fr);gap:26px;align-items:center;}
+.services-page :is(.astro-hero .wrap,.consult-hero .consult-wrap) {padding-top:24px;padding-bottom:24px;}
+.services-page :is(.hero-layout > img,.consult-hero-image) {display:block;width:100%;height:340px;max-height:340px;object-fit:contain;object-position:center;border-radius:3px;}
+.services-page .hero-layout h1 {font-size:clamp(36px,4vw,56px);}
+.services-page .consult-lead {font-size:15px;line-height:1.6;}
+.services-page .service-benefits {list-style:none;display:grid;gap:20px;margin:0;padding:0 0 0 18px;border-left:1px solid var(--svc-border);font-size:13px;}
+.services-page .service-benefits li {display:flex;align-items:center;gap:12px;color:var(--svc-cream);}
+.services-page .service-benefits span {flex:none;width:27px;text-align:center;font-size:26px;line-height:1;color:var(--svc-pink);}
+/* Astro cards and process */
+.services-page .astro-card {background:var(--svc-panel);border:1px solid var(--svc-border);border-radius:5px;box-shadow:none;}
+.services-page .astro-icon {background:var(--svc-panel);color:var(--svc-pink);border-color:var(--svc-border);}
+.services-page .astro-steps span {background:var(--svc-pink);color:var(--svc-dark);}
+.services-page .astro-steps li::after {color:var(--svc-pink);}
+.services-page .process {border-color:var(--svc-border);}
+/* FAQ: dark panels, including open state */
+.services-page :is(.faq,.consult-faq) details {border-color:var(--svc-border);background:var(--svc-panel);}
+.services-page :is(.faq,.consult-faq) details[open] {background:var(--svc-panel);}
+.services-page :is(.faq,.consult-faq) :is(summary,p) {color:var(--svc-cream);}
+.services-page :is(.faq,.consult-faq) summary::after {color:var(--svc-pink);}
+.services-page :is(.faq,.consult-faq) p a {color:var(--svc-pink);}
+.services-page .consult-light :is(.consult-checklist li::before,.consult-faq summary::after) {color:var(--svc-pink);}
+.services-page :is(.consult-topic,.consult-steps article) + :is(.consult-topic,article) {border-color:var(--svc-border);}
+.services-page :is(.consult-light,.light) a:not(.btn):not(.consult-btn) {color:var(--svc-pink);}
+.services-page :focus-visible {outline:2px solid var(--svc-pink);outline-offset:4px;}
+@media(max-width:1000px){
+ .services-page :is(.hero-layout,.consult-hero-grid){grid-template-columns:repeat(2,minmax(0,1fr));}
+ .services-page .service-benefits{grid-column:1/-1;grid-template-columns:repeat(2,minmax(0,1fr));border-left:0;padding:0;gap:12px;}
+}
+@media(max-width:700px){
+ .services-page :is(.wrap,.consult-wrap){padding:28px 20px;}
+ .services-page :is(.site-header,.consult-header){padding:15px 5%;}
+ .services-page :is(.hero-layout,.consult-hero-grid){grid-template-columns:minmax(0,1fr);gap:20px;}
+ .services-page :is(.hero-layout > img,.consult-hero-image){height:auto;max-height:300px;}
+ .services-page .service-benefits{grid-template-columns:1fr;gap:10px;}
+ .services-page .astro-cards{grid-template-columns:repeat(2,minmax(0,1fr));}
+}
+@media(max-width:380px){.services-page .astro-cards{grid-template-columns:1fr;}}
