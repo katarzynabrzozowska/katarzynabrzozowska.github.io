@@ -774,3 +774,49 @@
     }
 
 }
+/* ========================================
+   KOREKTA KOLORÓW NA JASNYM TLE
+======================================== */
+
+.light {
+    color: #3b243f;
+}
+
+.light h1,
+.light h2,
+.light h3,
+.light h4 {
+    color: #110320;
+}
+
+.light p,
+.light li,
+.light small,
+.light .lead {
+    color: #3b243f;
+    opacity: 1;
+}
+
+.light .eyebrow {
+    color: #98446f;
+}
+
+.light strong,
+.light b,
+.light em {
+    color: #4f0c28;
+}
+
+/* FAQ */
+
+.light summary {
+    color: #110320;
+}
+
+.light details p {
+    color: #3b243f;
+}
+
+.light details a {
+    color: #4f0c28;
+}
